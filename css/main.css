@@ -85,7 +85,7 @@ section {
 }
 
 .wrapper {
-  background-image: url(./../img/wrap_head.png);
+  background-image: url(../../../img/wrap_head.png);
   background-repeat: no-repeat;
   top: 50px;
   margin: 0 auto;
@@ -136,7 +136,7 @@ section {
   height: 14px;
   margin-top: 6px;
   margin-left: -20px;
-  background-image: url(../../../img/phone.png);
+  background-image: url(../../../img/wrap_head.png);
 }
 
 .hello {
@@ -449,7 +449,7 @@ section {
   border-radius: 0;
 }
 .radio__chekbox .radio_visible::before {
-  background: url(./../../img/mark.png);
+  background: url(../../../img/mark.png);
   background-repeat: no-repeat;
   width: 10px;
   height: 8px;
