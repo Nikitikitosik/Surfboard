@@ -1,0 +1,45 @@
+.header {
+   padding-top: 20px;
+
+
+   &__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+}
+
+.navigation {
+
+
+   &__list {
+      display: flex;
+   }
+
+   &__item {
+      align-items: center;
+      margin-left: 20px;
+      font-weight: 700;
+
+      &:first-child {
+         margin-left: 0px;
+      }
+   }
+
+}
+
+.contacts {
+   font-style: normal;
+   font-weight: 700;
+   font-size: 22px;
+
+   &::before {
+      content: "";
+      position: absolute;
+      width: 13px;
+      height: 14px;
+      margin-top: 6px;
+      margin-left: -20px;
+      background-image: url(../../img/phone.png);
+   }
+}
