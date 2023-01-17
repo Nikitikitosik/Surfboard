@@ -136,7 +136,7 @@ section {
   height: 14px;
   margin-top: 6px;
   margin-left: -20px;
-  background-image: url(./../../img/phone.png);
+  background-image: url(../../../img/phone.png);
 }
 
 .hello {
@@ -334,7 +334,7 @@ section {
 }
 
 .order {
-  background: url(./../../img/back_sur.jpg);
+  background: url(../../../img/back_sur.jpg);
   background-repeat: no-repeat;
   background-size: 1100px 702px;
 }
