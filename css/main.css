@@ -264,7 +264,7 @@ hr {
 .reviews {
   margin-top: 59px;
 }
-.reviews__contaier {
+.reviews__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -346,6 +346,7 @@ hr {
           align-items: center;
 }
 .order__title {
+  margin-top: 62px;
   font-weight: 700;
   font-size: 48px;
   text-transform: uppercase;
