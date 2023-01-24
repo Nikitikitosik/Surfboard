@@ -1,9 +1,7 @@
 .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 28px;
-   
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 
 .navigation {
@@ -15,11 +13,11 @@
 
    &__item {
       align-items: center;
-      margin-left: 20px;
+      margin-left: rem(20px);
       font-weight: 700;
 
       &:first-child {
-         margin-left: 0px;
+         margin-left: rem(0px);
       }
    }
 
@@ -28,15 +26,15 @@
 .contacts {
    font-style: normal;
    font-weight: 700;
-   font-size: 22px;
+   font-size: rem(22px);
 
    &::before {
       content: "";
       position: absolute;
-      width: 13px;
-      height: 14px;
-      margin-top: 6px;
-      margin-left: -20px;
+      width: rem(13px);
+      height: rem(14px);
+      margin-top: rem(6px);
+      margin-left: rem(-20px);
       background-image: url(./../img/phone.png);
    }
 }

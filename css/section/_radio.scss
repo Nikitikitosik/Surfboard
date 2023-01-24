@@ -2,7 +2,7 @@
    display: flex;
    cursor: pointer;
    user-select: none;
-   margin-right: 10px;
+   margin-right: rem(10px);
 
    &:last-child {
       margin-right: 0;
@@ -15,8 +15,8 @@
          &::before {
             background: url(./../img/mark.png);
             background-repeat: no-repeat;
-            width: 10px;
-            height: 8px;
+            width: rem(10px);
+            height: rem(8px);
          }
       }
    }
@@ -33,9 +33,9 @@
 }
 
 .radio_visible {
-   margin-right: 10px;
-   height: 25px;
-   width: 25px;
+   margin-right: rem(10px);
+   height: rem(25px);
+   width: rem(25px);
    position: relative;
    border-radius: 50%;
    background: #fff;
@@ -46,8 +46,8 @@
 
    &::before {
       content: "";
-      height: 13px;
-      width: 13px;
+      height: rem(13px);
+      width: rem(13px);
       border-radius: 50%;
       background: #FEDB3F;
       position: absolute;

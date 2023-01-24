@@ -1,6 +1,11 @@
 .order {
+   display: flex;
+   align-items: center;
 
-   &__back {
+   &::after {
+      position: absolute;
+      z-index: -1;
+      content: "";
       background: url(./../img/back_sur.jpg);
       background-repeat: no-repeat;
       background-size: cover;
@@ -9,18 +14,20 @@
       margin: 0 auto;
    }
 
+
+
+
    &__container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      
+
    }
 
    &__title {
-      margin-top: 62px;
+   
       font-weight: 700;
-      font-size: 48px;
+      font-size: rem(48px);
       text-transform: uppercase;
    }
 }
-

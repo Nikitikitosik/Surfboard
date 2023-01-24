@@ -1,5 +1,5 @@
 .dignity {
-   margin-top: 64px;
+   margin-top: rem(64px);
 
    &__list {
       display: flex;
@@ -11,9 +11,9 @@
    align-items: center;
 
    &-text {
-      margin-left: 14px;
+      margin-left: rem(14px);
       width: 30%;
       font-weight: 700;
-      font-size: 16px;
+      font-size: rem(16px);
    }
 }

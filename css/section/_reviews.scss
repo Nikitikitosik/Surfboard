@@ -1,6 +1,6 @@
 .reviews {
-   margin-top: 59px;
-
+   display: flex;
+   align-items: center;
 
    &__container {
       display: flex;
@@ -10,52 +10,52 @@
 
    &__title {
       font-weight: 700;
-      font-size: 48px;
+      font-size: rem(48px);
       text-transform: uppercase;
       color: #292929;
    }
 
    &__content {
-      margin-top: 74px;
+      margin-top: rem(74px);
       display: flex;
       justify-content: space-between;
-      padding: 42px 142px 42px 42px;
+      padding: rem(42px) rem(142px) rem(42px) rem(42px);
 
       &-info {
-         padding: 28px 0px 0px 40px;
+         padding: rem(28px) rem(0px) rem(0px) rem(40px);
       }
 
       &-title {
          font-weight: 700;
-         font-size: 27px;
+         font-size: rem(27px);
          color: #292929;
       }
 
       &-text {
-         margin-top: 14px;
+         margin-top: rem(14px);
          font-weight: 400;
          color: #666;
-         line-height: 22px;
+         line-height: rem(22px);
       }
 
       &-name {
-         margin-top: 25px;
+         margin-top: rem(25px);
          font-weight: 500;
          color: #292929;
       }
    }
 
    &__list {
-      margin-top: 15px;
-      margin-bottom: 63px;
+      margin-top: rem(15px);
+      margin-bottom: rem(63px);
       display: flex;
    }
 
    &__item {
-      margin-right: 6px;
+      margin-right: rem(6px);
 
       &:last-child {
-         margin-right: 0px;
+         margin-right: rem(0px);
       }
    }
 
