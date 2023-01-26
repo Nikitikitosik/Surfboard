@@ -1,6 +1,5 @@
 html {
-  font-family: "Alegreya Sans";
-  font-size: 18px;
+  font-size: 16px;
 }
 
 body,
@@ -9,6 +8,8 @@ html {
 }
 
 body {
+  font-family: "Alegreya Sans";
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #fff;
@@ -61,7 +62,7 @@ img {
 
 hr {
   width: 100%;
-  height: rem(4px);
+  height: 0.25rem;
   color: #FFFFFF;
   mix-blend-mode: normal;
   opacity: 0.1;
@@ -72,6 +73,7 @@ hr {
   width: 95%;
   max-width: 940px;
   margin: 0 auto;
+  height: 100%;
 }
 
 .wrapper {
@@ -87,7 +89,8 @@ hr {
   height: 100vh;
 }
 
-.header {
+.header__content {
+  padding-top: 1.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,7 +133,7 @@ hr {
   background-image: url(./../img/phone.png);
 }
 
-.hello {
+.hello__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

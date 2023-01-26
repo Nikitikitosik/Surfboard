@@ -1,10 +1,14 @@
-.hello {
-display: flex;
-align-items: center;
+.hello { 
+
+   &__container {
+      display: flex;
+      align-items: center;
+   }
+
 
 
    &__title {
-      
+
       font-weight: 700;
       font-size: rem(48px);
       text-transform: uppercase;

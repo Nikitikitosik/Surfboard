@@ -2,3 +2,14 @@
    @return $px / $baseFontsize +0rem;
 }
 
+@mixin tablets {
+   @media (max-width: $tablets) {
+      @content;
+   }
+}
+
+@mixin phone {
+   @media (max-width: $phone) {
+      @content;
+   }
+}
