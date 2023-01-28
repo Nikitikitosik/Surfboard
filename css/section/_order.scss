@@ -29,5 +29,9 @@
       font-weight: 700;
       font-size: rem(48px);
       text-transform: uppercase;
+
+      @include tablets {
+         margin-bottom: rem(30px);
+      }
    }
 }

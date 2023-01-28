@@ -21,6 +21,30 @@
       justify-content: space-between;
       padding: rem(42px) rem(142px) rem(42px) rem(42px);
 
+      @include tablets {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         padding: rem(56px) rem(24px) rem(46px);
+
+         &-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+         }
+
+         &-foto {
+            width: 130px;
+            height: 130px;
+         }
+
+         &-text {
+            text-align: center;
+         }
+
+
+      }
+
       &-info {
          padding: rem(28px) rem(0px) rem(0px) rem(40px);
       }
