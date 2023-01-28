@@ -1,4 +1,9 @@
 .dignity {
+
+   @include tablets {
+      display: none;
+   }
+   
    margin-top: rem(64px);
 
    &__list {

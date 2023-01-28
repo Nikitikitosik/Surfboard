@@ -1,11 +1,28 @@
+.header {
+
+   @include tablets {
+      background-color: #1968B1;
+   }
+}
+
+
+
 .header__content {
    padding-top: rem(28px);
    display: flex;
    justify-content: space-between;
    align-items: center;
+
+   @include tablets {
+      padding: rem(26px) rem(0px);
+   }
 }
 
 .navigation {
+
+   @include tablets {
+      display: none;
+   }
 
 
    &__list {
@@ -37,5 +54,15 @@
       margin-top: rem(6px);
       margin-left: rem(-20px);
       background-image: url(./../img/phone.png);
+
+      @include tablets {
+         display: none;
+      }
+   }
+}
+
+.header__contacts-number {
+   @include tablets {
+      display: none;
    }
 }

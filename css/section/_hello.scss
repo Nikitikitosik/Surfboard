@@ -1,4 +1,18 @@
-.hello { 
+.hello {
+
+   &__content {
+      @include tablets {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+   }
+
+   @include tablets {
+      // background-color: #1968B1;
+      background-image: url(./../../img/heder-tablets.png);
+   }
+
 
    &__container {
       display: flex;
@@ -9,12 +23,15 @@
 
 
    &__title {
-
       font-weight: 700;
       font-size: rem(48px);
       text-transform: uppercase;
-      font-weight: 700;
       width: 38%;
+
+      @include tablets {
+         text-align: center;
+         width: 91%;
+      }
 
       &-board {
          margin-top: rem(18px);
