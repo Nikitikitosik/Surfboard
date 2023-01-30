@@ -1,6 +1,10 @@
 .hello {
 
+
+
    &__content {
+
+
       @include tablets {
          display: flex;
          flex-direction: column;
@@ -12,7 +16,11 @@
       // background-color: #1968B1;
       background-image: url(./../../img/heder-tablets.png);
       background-size: cover;
-      
+   }
+
+   @include phone {
+      background-image: url(./../../img/back-phone.png);
+      background-size: cover;
 
    }
 
@@ -20,7 +28,8 @@
    &__container {
       display: flex;
       align-items: center;
-      height: 93%;
+      height: 91%;
+
    }
 
 
@@ -34,6 +43,11 @@
       @include tablets {
          text-align: center;
          width: 91%;
+      }
+
+      @include phone {
+         width: 110%;
+
       }
 
       &-board {

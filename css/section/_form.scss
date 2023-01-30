@@ -17,6 +17,10 @@
    flex: 1;
    margin-right: rem(20px);
 
+   @include phone {
+      margin-right: rem(0px);
+   }
+
    &:last-child {
       margin-right: 0;
    }
@@ -43,6 +47,8 @@
    border: solid rem(3px) transparent;
    border-radius: 4px;
 
+   
+
    &--textarea {
       height: rem(152px);
       resize: none;
@@ -61,6 +67,18 @@
 
    &-chek {
       margin-top: rem(20px);
+
+      @include phone {
+         display: flex;
+         justify-content: center;
+      }
+   }
+
+   &-phone {
+      @include phone{
+         display: flex;
+         justify-content: space-evenly;
+      }
    }
 }
 
@@ -71,6 +89,12 @@
       margin-top: rem(0px);
       display: flex;
       margin-left: rem(140px);
+   }
+
+   @include phone {
+      display: flex;
+      justify-content: center;
+      margin-left: rem(0px);
    }
 
 }

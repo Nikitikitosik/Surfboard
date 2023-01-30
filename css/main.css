@@ -189,6 +189,12 @@ hr {
     background-size: cover;
   }
 }
+@media (max-width: 480px) {
+  .hello {
+    background-image: url(./../../img/back-phone.png);
+    background-size: cover;
+  }
+}
 .hello__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -196,7 +202,7 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 93%;
+  height: 91%;
 }
 .hello__title {
   font-weight: 700;
@@ -208,6 +214,11 @@ hr {
   .hello__title {
     text-align: center;
     width: 91%;
+  }
+}
+@media (max-width: 480px) {
+  .hello__title {
+    width: 110%;
   }
 }
 .hello__title-board {
@@ -300,6 +311,11 @@ hr {
     width: 60%;
   }
 }
+@media (max-width: 480px) {
+  .why__title-text {
+    width: 95%;
+  }
+}
 .why-text {
   margin-top: 1.0625rem;
   font-weight: 400;
@@ -329,6 +345,18 @@ hr {
           align-items: center;
   width: 16.875rem;
   height: 16.875rem;
+}
+.why__item-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .why__item-title {
   margin-top: 3.125rem;
@@ -521,6 +549,11 @@ hr {
           flex: 1;
   margin-right: 1.25rem;
 }
+@media (max-width: 480px) {
+  .form__col {
+    margin-right: 0rem;
+  }
+}
 .form__col:last-child {
   margin-right: 0;
 }
@@ -569,6 +602,26 @@ hr {
 .form__controls-chek {
   margin-top: 1.25rem;
 }
+@media (max-width: 480px) {
+  .form__controls-chek {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  .form__controls-phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
 
 .form__but {
   margin-top: 2.875rem;
@@ -580,6 +633,17 @@ hr {
     display: -ms-flexbox;
     display: flex;
     margin-left: 8.75rem;
+  }
+}
+@media (max-width: 480px) {
+  .form__but {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 0rem;
   }
 }
 
