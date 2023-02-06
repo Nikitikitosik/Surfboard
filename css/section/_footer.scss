@@ -1,0 +1,63 @@
+.footer {
+   position: relative;
+   z-index: 2;
+   background: #fff;
+   background-size: cover;
+   bottom: -91%;
+
+
+   &__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: rem(17px) rem(0px);
+   }
+
+   &__address {
+      font-size: rem(21px);
+      color: #292929;
+   }
+}
+
+
+
+.contacts--footer {
+   color: #292929;
+   font-style: normal;
+   font-weight: 700;
+   font-size: rem(22px);
+   margin-left: 20px;
+
+   &::before {
+      content: "";
+      position: absolute;
+      width: rem(13px);
+      height: rem(14px);
+      margin-top: rem(6px);
+      margin-left: rem(-20px);
+      background-image: url(../../img/svg/phone-black.svg);
+      
+   }
+
+}
+
+@include phone {
+   .footer__content{
+      display: flex;
+      flex-direction: column;
+   }
+
+   .footer__contacts {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+   }
+
+   .contacts--footer{
+      margin-top: rem(12px);
+   }
+
+   .social {
+      margin-top: rem(13px);
+   }
+}

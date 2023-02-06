@@ -5,6 +5,11 @@
    }
 }
 
+.logo-img{
+   width: rem(50px);
+   height: rem(35px);
+   fill: #345;
+}
 
 
 .header__content {
@@ -53,8 +58,9 @@
       height: rem(14px);
       margin-top: rem(6px);
       margin-left: rem(-20px);
-      background-image: url(./../img/phone.png);
-
+      
+      background-image: url(./../../img/svg/phone.svg);
+      
       @include tablets {
          display: none;
       }

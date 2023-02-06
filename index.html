@@ -29,7 +29,13 @@
                <div class="container header__container">
                   <div class="header__content">
                      <a class="logo" href="#">
-                        <img src="./img/Logo.png" alt="логотип" class="logo__img">
+                        <svg class="logo-img">
+                           <use xlink:href="./img/sprite.svg#logo-icon"></use>
+                        </svg>
+                        <!-- <svg class="">
+                           <use xlink:href="./img/sprite.svg"></use>
+                        </svg> -->
+                        <!-- <img src="./img/Logo.png" alt="логотип" class="logo__img"> -->
                      </a>
                      <nav class="navigation">
                         <ul class="navigation__list">
@@ -59,6 +65,11 @@
                      <address class="contacts">
                         <a href="tel: +78009039090" class="contacts__number header__contacts-number">8 800 903 90 90</a>
                      </address>
+                     <a href="" class="hamburger">
+                        <span class="hamburger__plank"></span>
+                        <span class="hamburger__plank"></span>
+                        <span class="hamburger__plank"></span>
+                     </a>
                   </div>
                </div>
             </header>
@@ -71,16 +82,25 @@
                   <div class="dignity">
                      <ul class="dignity__list">
                         <li class="dignity__item">
-                           <img src="./img/surf.png" alt="Доска" class="dignity__item-img">
+                           <svg class="dignity__icon">
+                              <use xlink:href="./img/sprite.svg#surf-icon"></use>
+                           </svg>
+                           <!-- <img src="./img/surf.png" alt="Доска" class="dignity__item-img"> -->
                            <span class="dignity__item-text">Уникальный дизайн</span>
                         </li>
                         <li class="dignity__item">
-                           <img src="./img/table.png" alt="Стол" class="dignity__item-img">
+                           <svg class="dignity__icon">
+                              <use xlink:href="./img/sprite.svg#table-icon"></use>
+                           </svg>
+                           <!-- <img src="./img/table.png" alt="Стол" class="dignity__item-img"> -->
                            <span class="dignity__item-text">Прочные
                               материалы</span>
                         </li>
                         <li class="dignity__item">
-                           <img src="./img/avto.png" alt="Машина" class="dignity__item-img">
+                           <svg class="dignity__icon">
+                              <use xlink:href="./img/sprite.svg#car-icon"></use>
+                           </svg>
+                           <!-- <img src="./img/avto.png" alt="Машина" class="dignity__item-img"> -->
                            <span class="dignity__item-text">Быстрая
                               доставка</span>
                         </li>
@@ -92,161 +112,241 @@
          <section class="why section">
             <div class="container why__container">
                <div class="why__content">
-                  <h2 class="why__title">почему Surfboard?</h2>
-                  <p class="why__title-text">Мы создаем уникальные и качественные доски из прочных и экологичных
-                     материалов.
-                  </p>
+                  <div class="why__title-content">
+                     <h2 class="why__title">почему Surfboard?</h2>
+                     <p class="why__title-text">Мы создаем уникальные и качественные доски из прочных и экологичных
+                        материалов.
+                     </p>
+                  </div>
+                  <ul class="why__list">
+                     <li class="why__item">
+                        <div class="why__item-foto">
+                           <svg class="why__item-icon">
+                              <use xlink:href="./img/sprite.svg#human-icon"></use>
+                           </svg>
+                           <!-- <img class="why__item-img img--mini" src="./img/Human.png" alt="Человк"> -->
+                        </div>
+                        <div class="why__item-content">
+                           <h2 class="why__item-title">Perfect Fit</h2>
+                           <p class="why__item-text">Мы создаем доски по индивидуальным замерам. Мы учитываем при
+                              создании
+                              ваш
+                              рост, вес и уровень подготовки.</p>
+                        </div>
+                     </li>
+                     <li class="why__item">
+                        <div class="why__item-foto">
+                           <svg class="why__item-icon">
+                              <use xlink:href="./img/sprite.svg#flower-icon"></use>
+                           </svg>
+                           <!-- <img class="why__item-img" src="./img/flower.png" alt="Цветок"> -->
+                        </div>
+                        <div class="why__item-content">
+                           <h2 class="why__item-title">Strong</h2>
+                           <p class="why__item-text">Мы используем только качественные и экологичные материалы. Ваша
+                              доска
+                              прослужит вам долгие годы.</p>
+                        </div>
+                     </li>
+                     <li class="why__item">
+                        <div class="why__item-foto">
+                           <svg class="why__item-icon">
+                              <use xlink:href="./img/sprite.svg#surfboard-icon"></use>
+                           </svg>
+                           <!-- <img class="why__item-img" src="./img/surfboard.png" alt="Доска"> -->
+                        </div>
+                        <div class="why__item-content">
+                           <h2 class="why__item-title">Unique</h2>
+                           <p class="why__item-text">Вы станете обладателем уникального серфборда. Доска будет выполнена
+                              по
+                              вашему уникальному дизайну. </p>
+                        </div>
+                     </li>
+                  </ul>
                </div>
-               <ul class="why__list">
-                  <li class="why__item">
-                     <img class="why__item-img" src="./img/Human.png" alt="Человк">
-                     <div class="why__item-content">
-                        <h2 class="why__item-title">Perfect Fit</h2>
-                        <p class="why__item-text">Мы создаем доски по индивидуальным замерам. Мы учитываем при создании
-                           ваш
-                           рост, вес и уровень подготовки.</p>
-                     </div>
-                  </li>
-                  <li class="why__item">
-                     <img class="why__item-img" src="./img/flower.png" alt="Цветок">
-                     <div class="why__item-content">
-                        <h2 class="why__item-title">Strong</h2>
-                        <p class="why__item-text">Мы используем только качественные и экологичные материалы. Ваша доска
-                           прослужит вам долгие годы.</p>
-                     </div>
-                  </li>
-                  <li class="why__item">
-                     <img class="why__item-img" src="./img/surfboard.png" alt="Доска">
-                     <div class="why__item-content">
-                        <h2 class="why__item-title">Unique</h2>
-                        <p class="why__item-text">Вы станете обладателем уникального серфборда. Доска будет выполнена по
-                           вашему уникальному дизайну. </p>
-                     </div>
-                  </li>
-               </ul>
             </div>
          </section>
          <section class="reviews section">
             <div class="container reviews__container">
-               <h2 class="reviews__title">отзывы</h2>
-               <div class="reviews__content">
-                  <img class="reviews__content-foto" src="./img/Ольга.png" alt="Фото">
-                  <div class="reviews__content-info">
-                     <h3 class="reviews__content-title">Лучший дизайн</h3>
-                     <p class="reviews__content-text">Я увидела доски на сайте и влюбилась в их дизайн. К летнему
-                        сезону
-                        я заказала
-                        себе доску в SurfBoard. Дизайнер команды - волшебница! Она учла все мои предпочтения и
-                        комментарии.
-                        В
-                        итоге получился прекрасный дизайн. А я катаюсь на доске, которая мне нравится)
-                     </p>
-                     <div class="reviews__content-name">Ольга Макарова
+               <div class="reviews__container-content">
+                  <h2 class="reviews__title">отзывы</h2>
+                  <div class="reviews__content">
+                     <img class="reviews__content-foto" src="./img/Ольга.png" alt="Фото">
+                     <div class="reviews__content-info">
+                        <h3 class="reviews__content-title">Лучший дизайн</h3>
+                        <p class="reviews__content-text">Я увидела доски на сайте и влюбилась в их дизайн. К летнему
+                           сезону
+                           я заказала
+                           себе доску в SurfBoard. Дизайнер команды - волшебница! Она учла все мои предпочтения и
+                           комментарии.
+                           В
+                           итоге получился прекрасный дизайн. А я катаюсь на доске, которая мне нравится)
+                        </p>
+                        <div class="reviews__content-name">Ольга Макарова
+                        </div>
                      </div>
                   </div>
+                  <ul class="reviews__list">
+                     <li class="reviews__item">
+                        <a class="reviews__link" href="#">
+                           <img class="reviews__img" src="./img/Ольга лого.png" alt="Фото">
+                        </a>
+                     </li>
+                     <li class="reviews__item">
+                        <a class="reviews__link" href="#">
+                           <img class="reviews__img" src="./img/Марк лого.png" alt="Фото">
+                        </a>
+                     </li>
+                     <li class="reviews__item">
+                        <a class="reviews__link" href="#">
+                           <img class="reviews__img" src="./img/Маша лого.png" alt="Фото">
+                        </a>
+                     </li>
+                  </ul>
                </div>
-               <ul class="reviews__list">
-                  <li class="reviews__item">
-                     <a class="reviews__link" href="#">
-                        <img class="reviews__img" src="./img/Ольга лого.png" alt="Фото">
-                     </a>
-                  </li>
-                  <li class="reviews__item">
-                     <a class="reviews__link" href="#">
-                        <img class="reviews__img" src="./img/Марк лого.png" alt="Фото">
-                     </a>
-                  </li>
-                  <li class="reviews__item">
-                     <a class="reviews__link" href="#">
-                        <img class="reviews__img" src="./img/Маша лого.png" alt="Фото">
-                     </a>
-                  </li>
-               </ul>
             </div>
          </section>
          <section class="order section  ">
-            <!-- <div class="order__back"> -->
             <div class="container order__container">
-               <h2 class="order__title">закажите доску</h2>
-               <form method="post" class="form form__container">
-                  <div class="form__col">
-                     <div class="form__row">
-                        <label class="form__block">
-                           <div class="form__title">Имя</div>
-                           <input type="text" class="form__input">
-                        </label>
-                        <label class="form__block">
-                           <div class="form__title">Телефон</div>
-                           <input type="tel" class="form__input">
-                        </label>
+               <div class="order__container-content">
+                  <h2 class="order__title">закажите доску</h2>
+                  <form method="post" class="form form__container">
+                     <div class="form__col">
+                        <div class="form__row">
+                           <label class="form__block">
+                              <div class="form__title">Имя</div>
+                              <input type="text" class="form__input">
+                           </label>
+                           <label class="form__block">
+                              <div class="form__title">Телефон</div>
+                              <input type="tel" class="form__input">
+                           </label>
+                        </div>
+                        <div class="form__row">
+                           <label class="form__block">
+                              <div class="form__title">Улица</div>
+                              <input type="text" class="form__input">
+                           </label>
+                        </div>
+                        <div class="form__row">
+                           <label class="form__block">
+                              <div class="form__title">Дом</div>
+                              <input type="number" class="form__input">
+                           </label>
+                           <label class="form__block">
+                              <div class="form__title">Корпус</div>
+                              <input type="text" class="form__input">
+                           </label>
+                           <label class="form__block">
+                              <div class="form__title">Квартира</div>
+                              <input type="number" class="form__input">
+                           </label>
+                           <label class="form__block">
+                              <div class="form__title">Этаж</div>
+                              <input type="number" class="form__input">
+                           </label>
+                        </div>
                      </div>
-                     <div class="form__row">
-                        <label class="form__block">
-                           <div class="form__title">Улица</div>
-                           <input type="text" class="form__input">
-                        </label>
+                     <div class="form__col">
+                        <div class="form__row">
+                           <label class="form__block">
+                              <div class="form__title">Комментарий</div>
+                              <textarea class="form__input form__input--textarea"></textarea>
+                           </label>
+                        </div>
+                        <div class="form__controls form__controls-phone">
+                           <label class="radio">
+                              <input type="radio" name="option" class="radio__elen">
+                              <div class="radio_visible"></div>
+                              <div class="radio__title">Оплата наличными</div>
+                           </label>
+                           <label class="radio">
+                              <input type="radio" name="option" class="radio__elen">
+                              <div class="radio_visible"></div>
+                              <div class="radio__title">Оплата картой</div>
+                           </label>
+                        </div>
+                        <div class="form__controls form__controls-chek">
+                           <label class="radio radio__chekbox">
+                              <input type="checkbox" class="radio__elen">
+                              <div class="radio_visible radio_visible--radius"></div>
+                              <div class="radio__title">Не перезванивать</div>
+                           </label>
+                        </div>
+                        <div class="form__but">
+                           <button type="submit" class="button ">ЗАКАЗАТЬ</button>
+                           <button type="reset" class="button  button-clear">Очистить</button>
+                        </div>
                      </div>
-                     <div class="form__row">
-                        <label class="form__block">
-                           <div class="form__title">Дом</div>
-                           <input type="number" class="form__input">
-                        </label>
-                        <label class="form__block">
-                           <div class="form__title">Корпус</div>
-                           <input type="text" class="form__input">
-                        </label>
-                        <label class="form__block">
-                           <div class="form__title">Квартира</div>
-                           <input type="number" class="form__input">
-                        </label>
-                        <label class="form__block">
-                           <div class="form__title">Этаж</div>
-                           <input type="number" class="form__input">
-                        </label>
-                     </div>
-                  </div>
-                  <div class="form__col">
-                     <div class="form__row">
-                        <label class="form__block">
-                           <div class="form__title">Комментарий</div>
-                           <textarea class="form__input form__input--textarea"></textarea>
-                        </label>
-                     </div>
-                     <div class="form__controls form__controls-phone">
-                        <label class="radio">
-                           <input type="radio" name="option" class="radio__elen">
-                           <div class="radio_visible"></div>
-                           <div class="radio__title">Оплата наличными</div>
-                        </label>
-                        <label class="radio">
-                           <input type="radio" name="option" class="radio__elen">
-                           <div class="radio_visible"></div>
-                           <div class="radio__title">Оплата картой</div>
-                        </label>
-                     </div>
-                     <div class="form__controls form__controls-chek">
-                        <label class="radio radio__chekbox">
-                           <input type="checkbox" class="radio__elen">
-                           <div class="radio_visible radio_visible--radius"></div>
-                           <div class="radio__title">Не перезванивать</div>
-                        </label>
-                     </div>
-                     <div class="form__but">
-                        <button type="submit" class="button ">ЗАКАЗАТЬ</button>
-                        <button type="reset" class="button  button-clear">Очистить</button>
-                     </div>
-                  </div>
-               </form>
+                  </form>
+               </div>
             </div>
-            <!-- </div> -->
          </section>
+         <section class="section map">
+            <img class="map__img" src="./img/map.png" alt="Карта">
 
+            <footer class="footer">
+               <div class="container">
+                  <div class="footer__content">
+                     <div class="footer__contacts">
+                        <span class="footer__address">Москва, ул.Новый Арбат, д.31/12</span>
+                        <address class=" contacts--footer">
+                           <a href="tel: +78009039090" class="contacts__number contacts__number-footer">8 800 903 90
+                              90</a>
+                        </address>
+                     </div>
+                     <div class="social">
+                        <ul class="social__list">
+                           <li class="social__item">
+                              <a class="social__link" href="">
+                                 <div class="social__link-container">
+                                    <svg class="social__logo">
+                                       <use xlink:href="./img/sprite.svg#vk-icon"></use>
+                                    </svg>
+                                 </div>
+                                 <!-- <img class="social__logo" src="./img/vk.png" alt="Вконтакте"> -->
+                              </a>
+                           </li>
+                           <li class="social__item">
+                              <a class="social__link" href="">
+                                 <div class="social__link-container">
+                                    <svg class="social__logo">
+                                       <use xlink:href="./img/sprite.svg#f-icon"></use>
+                                    </svg>
+                                 </div>
+                                 <!-- <img class="social__logo" src="./img/f.png" alt="Фейсбук"> -->
+                              </a>
+                           </li>
+                           <li class="social__item">
+                              <a class="social__link" href="">
+                                 <div class="social__link-container">
+                                    <svg class="social__logo">
+                                       <use xlink:href="./img/sprite.svg#in-icon"></use>
+                                    </svg>
+                                 </div>
+                                 <!-- <img class="social__logo" src="./img/in.png" alt="Инстаграмм"> -->
+                              </a>
+                           </li>
+                           <li class="social__item">
+                              <a class="social__link" href="">
+                                 <div class="social__link-container">
+                                    <svg class="social__logo">
+                                       <use xlink:href="./img/sprite.svg#tw-icon"></use>
+                                    </svg>
+                                 </div>
+                                 <!-- <img class="social__logo" src="./img/tw.jpg" alt="Твитер"> -->
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </footer>
 
+         </section>
       </main>
 
-      <footer class="footer">
 
-      </footer>
    </div>
 
 </body>

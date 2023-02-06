@@ -1,10 +1,14 @@
 .why {
-   display: flex;
-   align-items: center;
+
+   &__container {
+      display: flex;
+      align-items: center;
+      
+
+   }
 
 
-
-   &__content {
+   &__title-content {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -30,28 +34,36 @@
 
          @include phone {
             width: 95%;
+            
          }
       }
    }
 
 
 
-   &-text {
-      margin-top: rem(17px);
-      font-weight: 400;
-      color: #666;
-      width: 40%;
-      text-align: center;
-   }
+   // &-text {
+   //    margin-top: rem(17px);
+   //    font-weight: 400;
+   //    color: #666;
+   //    width: 40%;
+   //    text-align: center;
+   // }
 
    &__list {
       margin-top: rem(81px);
       display: flex;
       justify-content: space-between;
+      gap: rem(65px);
+
+      @include tablets {
+         width: auto;
+         height: auto;
+         gap: rem(0px);
+      }
 
       @include phone {
-         
-         
+         display: block;
+
       }
 
 
@@ -65,9 +77,32 @@
       width: rem(270px);
       height: rem(270px);
 
+      &-icon{
+         width: 100%;
+         height: 100%;
+      }
+
       @include phone {
-         
-         
+         // display: inline-block;
+      }
+
+      &-foto {
+         width: rem(68px);
+         height: rem(68px);
+
+         @include phone {
+            margin-left: rem(40px);
+         }
+         // display: inline-block;
+      }
+
+      
+
+      @include phone {
+         width: auto;
+         height: auto;
+         margin-top: rem(63px);
+         flex-direction: unset;
       }
 
 
@@ -77,6 +112,13 @@
          display: flex;
          flex-direction: column;
          align-items: center;
+
+         @include phone {
+            // display: inline-block
+            width: 73%;
+            margin-left: rem(42px);
+            align-items: flex-start;
+         }
       }
 
       &-title {
@@ -84,6 +126,10 @@
          font-weight: 700;
          font-size: rem(27px);
          color: black;
+
+         @include phone {
+            margin-top: rem(0px);
+         }
       }
 
       &-text {
@@ -91,11 +137,17 @@
          margin-bottom: rem(150px);
          font-weight: 300;
          color: #666;
-         width: 105%;
+         width: 95%;
          text-align: center;
 
          @include tablets {
             width: 85%;
+         }
+
+         @include phone {
+            margin-top: rem(10px);
+            margin-bottom: rem(0px);
+            text-align: left;
          }
       }
    }

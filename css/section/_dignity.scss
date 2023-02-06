@@ -1,5 +1,10 @@
 .dignity {
 
+   &__icon {
+      width: rem(35px);
+      height: rem(35px);
+   }
+
    @include tablets {
       display: none;
    }

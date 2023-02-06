@@ -14,13 +14,13 @@
 
    @include tablets {
       // background-color: #1968B1;
-      background-image: url(./../../img/heder-tablets.png);
-      background-size: cover;
+      // background-image: url(./../../img/heder-tablets.png);
+      // background-size: cover;
    }
 
    @include phone {
-      background-image: url(./../../img/back-phone.png);
-      background-size: cover;
+      // background-image: url(./../../img/back-phone.png);
+      // background-size: cover;
 
    }
 
@@ -30,6 +30,13 @@
       align-items: center;
       height: 91%;
 
+      @include tablets {
+         height: 88%;
+      }
+
+      @include phone {
+         height: 73%;
+      }
    }
 
 
