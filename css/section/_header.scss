@@ -59,7 +59,7 @@
       margin-top: rem(6px);
       margin-left: rem(-20px);
       
-      background-image: url(./../../img/svg/phone.svg);
+      background-image: url(./../img/svg/phone.svg);
       
       @include tablets {
          display: none;
