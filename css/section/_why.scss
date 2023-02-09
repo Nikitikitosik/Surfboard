@@ -21,6 +21,10 @@
       text-transform: uppercase;
       color: black;
 
+      @include phone {
+         text-align: center;
+      }
+
       &-text {
          margin-top: 17px;
          text-align: center;
@@ -34,6 +38,7 @@
 
          @include phone {
             width: 95%;
+            
             
          }
       }

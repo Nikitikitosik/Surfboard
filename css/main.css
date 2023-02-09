@@ -103,6 +103,7 @@ hr {
 @media (max-width: 480px) {
   .wrapper {
     background-position: 80% 95%;
+    background-size: cover;
   }
 }
 
@@ -344,6 +345,11 @@ hr {
   font-size: 3rem;
   text-transform: uppercase;
   color: black;
+}
+@media (max-width: 480px) {
+  .why__title {
+    text-align: center;
+  }
 }
 .why__title-text {
   margin-top: 17px;
@@ -845,12 +851,16 @@ hr {
   position: absolute;
 }
 
-.footer {
+.map {
   position: relative;
-  z-index: 2;
+}
+
+.footer {
+  position: absolute;
   background: #fff;
   background-size: cover;
-  bottom: -91%;
+  bottom: 0px;
+  width: 100%;
 }
 .footer__content {
   display: -webkit-box;
