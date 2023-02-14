@@ -99,7 +99,7 @@ hr {
 
 	@include tablets {
 		background-position: 95% 100%;
-		background-size: auto;
+		background-size: cover ;
 	}
 
 	@include phone {

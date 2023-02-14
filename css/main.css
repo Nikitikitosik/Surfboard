@@ -97,7 +97,7 @@ hr {
 @media (max-width: 768px) {
   .wrapper {
     background-position: 95% 100%;
-    background-size: auto;
+    background-size: cover;
   }
 }
 @media (max-width: 480px) {
@@ -401,8 +401,6 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 16.875rem;
-  height: 16.875rem;
 }
 .why__item-icon {
   width: 100%;
@@ -462,7 +460,6 @@ hr {
 }
 .why__item-text {
   margin-top: 1.25rem;
-  margin-bottom: 9.375rem;
   font-weight: 300;
   color: #666;
   width: 95%;

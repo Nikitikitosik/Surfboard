@@ -3,7 +3,7 @@
    &__container {
       display: flex;
       align-items: center;
-      
+
 
    }
 
@@ -38,21 +38,13 @@
 
          @include phone {
             width: 95%;
-            
-            
+
+
          }
       }
    }
 
 
-
-   // &-text {
-   //    margin-top: rem(17px);
-   //    font-weight: 400;
-   //    color: #666;
-   //    width: 40%;
-   //    text-align: center;
-   // }
 
    &__list {
       margin-top: rem(81px);
@@ -71,25 +63,19 @@
 
       }
 
-
-
    }
 
    &__item {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: rem(270px);
-      height: rem(270px);
 
-      &-icon{
+      &-icon {
          width: 100%;
          height: 100%;
       }
 
-      @include phone {
-         // display: inline-block;
-      }
+
 
       &-foto {
          width: rem(68px);
@@ -98,10 +84,10 @@
          @include phone {
             margin-left: rem(40px);
          }
-         // display: inline-block;
+
       }
 
-      
+
 
       @include phone {
          width: auto;
@@ -119,7 +105,7 @@
          align-items: center;
 
          @include phone {
-            // display: inline-block
+         
             width: 73%;
             margin-left: rem(42px);
             align-items: flex-start;
@@ -139,7 +125,6 @@
 
       &-text {
          margin-top: rem(20px);
-         margin-bottom: rem(150px);
          font-weight: 300;
          color: #666;
          width: 95%;
@@ -158,4 +143,3 @@
    }
 
 }
-
